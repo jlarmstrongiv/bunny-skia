@@ -34,7 +34,7 @@
     "patch:canvaskit": "npx patch-package canvaskit-wasm --exclude='nothing'",
     "patch:skia": "npx patch-package @shopify/react-native-skia --exclude='nothing'",
     "patch:webgpu": "npx patch-package @webgpu/types --exclude='nothing'",
-    "postinstall": "npx patch-package",
+    "postinstall:local": "npx patch-package",
     "prepublishOnly": "npm run build",
     "pretest:deno": "npm run build:dev",
     "pretest:node": "npm run build:dev",
