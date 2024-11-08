@@ -3,7 +3,7 @@
   "version": "0.0.3",
   "private": false,
   "type": "module",
-  "description": "@shopify/react-native-skia/headless for Edge Scripting for bunny.net 🐰",
+  "description": "canvaskit-wasm for Edge Scripting for bunny.net 🐰",
   "keywords": [
     "BunnyCDN",
     "bunny.net",
@@ -16,10 +16,9 @@
     "scripting",
     "canvaskit",
     "skia",
-    "headless",
     "wasm"
   ],
-  "homepage": "https://bunny-launcher.net/edge-scripting/skia/",
+  "homepage": "https://bunny-launcher.net/imaging/skia/",
   "bugs": "https://github.com/jlarmstrongiv/bunny-skia/issues",
   "repository": {
     "type": "git",
@@ -32,7 +31,6 @@
     "build:dev": "NODE_ENV=development npx tsx src/bundler",
     "build": "npx tsx src/bundler",
     "patch:canvaskit": "npx patch-package canvaskit-wasm --exclude='nothing'",
-    "patch:skia": "npx patch-package @shopify/react-native-skia --exclude='nothing'",
     "patch:webgpu": "npx patch-package @webgpu/types --exclude='nothing'",
     "postinstall:local": "npx patch-package",
     "prepublishOnly": "npm run build",
@@ -45,22 +43,7 @@
   "files": [
     "dist"
   ],
-  "peerDependencies": {
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "@types/react": "^18.3.11",
-    "@types/react-dom": "^18.3.1"
-  },
-  "peerDependenciesMeta": {
-    "@types/react": {
-      "optional": true
-    },
-    "@types/react-dom": {
-      "optional": true
-    }
-  },
   "devDependencies": {
-    "@shopify/react-native-skia": "1.5.0",
     "@tsconfig/node20": "20.1.4",
     "@types/fs-extra": "11.0.4",
     "@types/node": "22.5.4",

@@ -5,10 +5,9 @@
 ## Installation
 
 ```shell
-npm install bunny-skia react react-dom
-npm install --save-dev @types/react @types/react-dom
+npm install bunny-skia
 ```
 
 ## Documentation
 
-Please read the [docs](https://bunny-launcher.net/edge-scripting/skia/) for usage and examples.
+Please read the [docs](https://bunny-launcher.net/imaging/skia/) for usage and examples.
