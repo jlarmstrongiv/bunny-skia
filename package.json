@@ -1,6 +1,6 @@
 {
   "name": "bunny-skia",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "private": false,
   "type": "module",
   "description": "canvaskit-wasm for Edge Scripting for bunny.net 🐰",
