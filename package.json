@@ -30,8 +30,7 @@
   "scripts": {
     "build:dev": "NODE_ENV=development npx tsx src/bundler",
     "build": "npx tsx src/bundler",
-    "patch:canvaskit": "npx patch-package canvaskit-wasm --exclude='nothing'",
-    "patch:webgpu": "npx patch-package @webgpu/types --exclude='nothing'",
+    "patch": "npx patch-package canvaskit-wasm --exclude='nothing'",
     "postinstall:local": "npx patch-package",
     "prepublishOnly": "npm run build",
     "pretest:deno": "npm run build:dev",
